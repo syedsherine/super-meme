@@ -1,0 +1,8 @@
+<p>
+  audio works!
+</p>
+<div class="col-xs-12">
+	<cool-audio>
+	  <source *ngFor="let track of tracks" #sourceElement [src]="track.path" type="audio/mpeg">
+	</cool-audio>
+</div>

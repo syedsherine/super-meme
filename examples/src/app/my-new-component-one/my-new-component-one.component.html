@@ -1,0 +1,15 @@
+<div *ngIf="formStatus">Form Submitted</div>
+
+<form>
+  <div class="input"><label> First Name : </label><input type="text" [(ngModel)]="user.firstname" name="firstname"></div>
+  <div class="input"><label> Last Name : </label><input type="text" [(ngModel)]="user.lastname" name="lastname"></div>
+  <div class="input"><label> Email Name : </label><input type="email" [(ngModel)]="user.email" name ="email"></div>
+  <div class="input"><label> Employee Id :</label><input type="number" [(ngModel)]="user.empid" name="empid"></div>
+  <div class="input"><button (click)="onSubmit()">Submit</button></div>
+</form>
+
+<div *ngFor="let user of items">
+    {{user.firstname}}   {{user.lastname}}
+</div>
+
+

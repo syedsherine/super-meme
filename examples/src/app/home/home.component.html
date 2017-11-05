@@ -1,0 +1,10 @@
+<p class="username">
+  Welcome syed!
+</p>
+<!--<button (click)="gotoProductsPage()">Go to Products</button> -->
+<div *ngFor="let item of deals">
+  <app-my-new-component [title]="item.title" [name]="item.name" [price]="item.price" (notify)="onNotify($event)"></app-my-new-component>
+</div>
+<button (click)="setUser()">Set User</button>
+<button (click)="getUser()">Get User</button>
+<button (click) = "sendData()">Send Data</button> 
